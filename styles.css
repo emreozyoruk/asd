@@ -1,0 +1,369 @@
+/* Resetleme */
+:root {
+    background-color: rgb(37, 37, 37);
+}
+
+* {  
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #121212;
+    padding: 10px 20px;
+    color: white;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+
+    
+}
+
+.logo img {
+    max-width: 15vw; /* veya istediğiniz genişlik */
+    height: auto; /* Otomatik yükseklik ayarı */
+    
+
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 6vw;
+    font-size: 1.3vw;
+    padding-right: 8vw;
+
+}
+
+.nav-links li {
+    margin: 0 10px;
+    
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    transition: color 1s ease-in-out;
+}
+
+.nav-links a:hover {
+    color:red;
+}
+h1 {
+    font-weight: bold;
+}
+h1 , h2 {
+    margin-top: 30px;
+    text-align: center;
+}
+h2 {
+    font-weight: bold;
+}
+
+.homepage {
+    width: 100%;
+    height: 70vh;
+    margin: 0px;
+
+    
+}
+ 
+div.homepage img {
+    position: relative;
+    width: 100%;
+    height: 100%;
+   
+}
+
+#deneme {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    font-size: 4vw;
+    transform: translate(-50%, -50%);  
+}
+#deneme2 {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    text-align: center;
+    color: white;
+    font-size: 2vw;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+}
+.about{
+    width:50%;
+    height: 85vh;
+    background-color: rgb(80, 80, 80);
+    margin: 0px;  
+    float: left;  
+    display: flex;
+  align-items: center;
+  justify-content: center;
+}  
+body div:nth-child(3){
+    border-right:solid black;
+    border-right-width: thin;   
+}
+#kahveli {
+    width: 100%;
+    height: 100%;
+
+}
+
+#spr {
+    margin-left: 35vw;
+}
+#soldaki {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+ #deneme6 {
+    position: absolute;
+    color: white;
+    font-size: larger;
+    margin: 2%;
+ }
+
+ 
+
+ .container {
+    display: flex;
+    min-width: 22%;
+    min-height: 75vh;
+    
+    
+  }
+  
+  .services {
+    flex: 1;
+    padding: 2vw;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.425);
+    border: 1px solid rgb(37, 37, 37);;
+    margin: 10px;
+    font-size: larger;
+    color: white;
+    border-radius: 3%;
+    
+  }
+ 
+  .services:hover {
+    color:black;
+    background-color: white;
+    transition: color 2s ease-in-out;
+    transition: background-color 2s ease-in-out;
+      
+
+  }
+
+
+     
+  .footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    
+    justify-content: space-between;
+    min-height:50vh ;
+
+    
+}
+
+#deneme3 {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+/* Style for the logo */
+.footer-logo img {
+    width: 20vw; /* Adjust the size as needed */
+    border-radius: 50%;
+    transition: transform 1s ease;
+
+
+}
+.footer-logo img:hover{
+    transform:rotate(-360deg)
+}
+
+/* Style for the social icons */
+.social-icons a {
+    margin-right: 30px;
+    text-decoration: none;
+    color: #fff;
+    
+   
+}
+
+
+.social-icons img {
+    max-width: 2vw;
+    margin-bottom: 2vw;
+
+}
+
+.contact-info {
+    border-style: solid;
+    min-width: 15vw;
+    text-align: center;
+    align-items: center;
+    border-radius: 20%;
+background-color: black;
+    border-color: white;
+    transition: background-color 1.5s ease-in-out;
+    
+    
+
+}
+
+.contact-info:hover{
+background-color: white;
+color: black;
+
+transition: 1.5s ease-in-out;
+border-color: black;
+
+      
+
+
+
+}
+.contact-info p {
+    font-size: large;
+
+}
+
+
+    
+
+     /* Diğer stil kodları burada olabilir */
+
+.shake {
+    animation: shake 1s ease-in-out infinite;
+}
+
+@keyframes shake {
+    0%, 100% {
+        transform: translateX(0);
+    }
+    10%, 30%, 50%, 70%, 90% {
+        transform: translateX(-5px);
+    }
+    20%, 40%, 60%, 80% {
+        transform: translateX(5px);
+    }
+}
+
+/* Diğer stil kodları burada olabilir */
+
+/* Diğer stil kodları burada olabilir */
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.5s forwards;
+}
+
+.modal-content {
+    background-color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #888;
+    width: 60%;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.5s forwards;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@keyframes slideIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        top: -50%;
+    }
+    100% {
+        top: 50%;
+    }
+}
+
+/* Diğer stil kodları burada yer alır */
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    
+    color: white;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-to-top span {
+    vertical-align: middle;
+}
+
+
+
+
+
+    
+
+
+ 
+
+
+
+
+
+
